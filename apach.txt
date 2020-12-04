@@ -1,8 +1,0 @@
-#!/bin/bash
-echo "Start"
-yum update -y
-yum install httpd -y
-echo "<html><body><p>Sasha</p></body></html>" > /var/www/html/index.html
-sudo service httpd start
-chkconfig httpd on
-echo "End"
